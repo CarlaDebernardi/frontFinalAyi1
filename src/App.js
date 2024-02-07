@@ -5,7 +5,7 @@ import Formu from './components/formu/Formu';
 import Login from './components/login/Login';
 import Navbar from './components/navbar/Navbar';
 import Table from './components/table/Table';
-import Index from './components/index/Index';
+import Inicio from './components/inicio/Inicio';
 
 function App() {
   const tituloTabla = "Listado de Empleados";
@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <div className='container'> 
        <Routes>
-       <Route path='/' element={<Index/>}></Route>
+       <Route path='/' element={<Inicio/>}></Route>
         <Route path='/ingresar' element={<Login/>}></Route>
         <Route path='/empleado/all' element={<Table titulo={tituloTabla}/>}></Route>
         <Route path='/empleado/save' element={<Formu/>}></Route>

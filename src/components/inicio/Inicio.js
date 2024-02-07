@@ -2,7 +2,7 @@ import React from "react";
 import img from "./descarga__1_-removebg-preview.png";
 import { Link} from 'react-router-dom';
 
-const Index = () => {
+const Inicio = () => {
   return (
     <div>
       <div className=" d-flex align-items-center justify-content-center">
@@ -29,4 +29,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Inicio;

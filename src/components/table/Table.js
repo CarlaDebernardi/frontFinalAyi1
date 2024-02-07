@@ -11,10 +11,10 @@ const Table = (props) => {
     const { titulo } = props;
     
     useEffect(() => {
-    listarClientes()
+    listarEmpleados()
     },[])
 
-    const listarClientes = () => {
+    const listarEmpleados = () => {
       EmpleadoService.getAllEmpleados()
         .then(response => {
           const empleados = response.data;
@@ -33,7 +33,7 @@ const Table = (props) => {
     const deleteEmpleado = (empleadoId) => {
       EmpleadoService.deleteEmpleado(empleadoId)
         .then((response) => {
-          listarClientes();
+          listarEmpleados();
         })
         .catch((error) => {
           console.log(error);

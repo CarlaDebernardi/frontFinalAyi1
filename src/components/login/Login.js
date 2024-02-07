@@ -20,7 +20,6 @@ const Login = () => {
       const response = await UsuarioService.ingresarUsuario(usuario);
       console.log(response.data);
 
-      // Verifica el estado de la respuesta y redirige si es exitosa
       if (response.status === 200) {
         navigate("/empleado/all");
     
